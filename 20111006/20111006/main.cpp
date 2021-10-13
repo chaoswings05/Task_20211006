@@ -48,7 +48,7 @@ public:
     }
 
 private:
-    int* newArray = new int[0];
+    int* newArray = nullptr;
     int Size;
 };
 
