@@ -49,7 +49,7 @@ public:
 
 private:
     int* newArray = nullptr;
-    int Size;
+    int Size = 0;
 };
 
 int main()
