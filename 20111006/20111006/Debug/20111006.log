@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  20111006.vcxproj -> C:\Users\User\Desktop\20111006\Debug\20111006.exe
+C:\Users\User\Desktop\Task_20211006\20111006\20111006\main.cpp(42): warning C4715: 'Array::Get': 値を返さないコントロール パスがあります。
+  20111006.vcxproj -> C:\Users\User\Desktop\Task_20211006\20111006\Debug\20111006.exe

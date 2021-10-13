@@ -14,16 +14,31 @@ public:
     void Create(int num)
     {
         newArray = new int[num];
+        Size = num;
     }
 
     void Set(int num, int value)
     {
-        newArray[num] = value;
+        if (num >= 0 && num < Size)
+        {
+            newArray[num] = value;
+        }
+        else
+        {
+            printf("配列外を参照しようとしています。\n");
+        }
     }
 
     int Get(int num)
     {
-        return newArray[num];
+        if (num >= 0 && num < Size)
+        {
+            return newArray[num];
+        }
+        else
+        {
+            printf("配列外を参照しようとしています。\n");
+        }
     }
 
     ~Array()
@@ -31,8 +46,10 @@ public:
         delete[] newArray;
         newArray = nullptr;
     }
+
 private:
     int* newArray = new int[0];
+    int Size;
 };
 
 int main()
